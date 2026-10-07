@@ -3,7 +3,6 @@
 /**
  * Plugin Name: BLC Customization
  * Description: Custom CSS and JavaScript for Balanced Life Care.
- * Version: 1.0.0
  * Author: Ethelyn Matias
  * Text Domain: blc-customization
  */
