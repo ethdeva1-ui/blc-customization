@@ -1,0 +1,796 @@
+/* ==========================================
+   CONTENT GENERAL CONSULTATION
+   ========================================== */
+
+.blc-content-scroll {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    margin: 0 !important;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: visible;
+    font-family: Arial, sans-serif;
+    color: #173b36;
+}
+
+
+/* Main card */
+
+.blc-information-card {
+    width: 100%;
+    min-height: 695px;
+    background: #ffffff;
+    border: 1px solid #e1eeea;
+    border-radius: 14px;
+    padding: 22px;
+    margin-top: -30px !important;
+    box-sizing: border-box;
+    box-shadow: 0 4px 18px rgba(20, 80, 70, 0.05);
+}
+
+
+/* ==========================================
+   WELCOME STATE
+   ========================================== */
+
+.blc-welcome-state {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+
+/* ==========================================
+   WELCOME IMAGE
+   ========================================== */
+
+.blc-welcome-image-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1024 / 621;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.blc-welcome-image {
+    display: block;
+    width: 100%;
+    height: 95% !important;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   WELCOME CONTENT
+   ========================================== */
+
+.blc-welcome-copy {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 42px 28px;
+    box-sizing: border-box;
+    text-align: left;
+    background: #ffffff;
+}
+
+
+/* ==========================================
+   GET STARTED LABEL
+   ========================================== */
+
+.blc-welcome-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: -60px 0 12px;
+}
+
+
+.blc-welcome-eyebrow-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 13px;
+    border-radius: 20px;
+    background: #e6f5f1;
+    color: #0b7967;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+.blc-welcome-accent {
+    width: 58px;
+    height: 3px;
+    background: #18B99F;
+    border-radius: 3px;
+}
+
+
+/* ==========================================
+   WELCOME TITLE
+   ========================================== */
+
+.blc-welcome-title {
+    margin: 0 0 9px;
+    color: #102b46 !important;
+    font-size: 25px !important;
+    line-height: 1.08;
+    font-weight: 700 !important;
+    letter-spacing: -0.6px;
+}
+
+
+/* ==========================================
+   WELCOME DESCRIPTION
+   ========================================== */
+
+.blc-welcome-description {
+    max-width: 760px;
+    margin: 0 0 20px;
+    color: #52708a;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* ==========================================
+   SIDEBAR POINTER / START HERE
+   ========================================== */
+
+.blc-welcome-pointer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 10px 22px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #f1faf8;
+    border: 1px solid #dcefea;
+}
+
+
+.blc-welcome-pointer-arrow {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    color: #0b9684;
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+
+.blc-welcome-pointer-divider {
+    width: 1px;
+    align-self: stretch;
+    min-height: 60px;
+    background: #cfe6e1;
+}
+
+
+.blc-welcome-pointer-copy {
+    min-width: 0;
+}
+
+
+.blc-welcome-pointer-title {
+    margin: 0 0 5px;
+    color: #173b36;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+
+.blc-welcome-pointer-text {
+    margin: 0;
+    color: #52708a;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .blc-welcome-state {
+        min-height: 649px;
+    }
+
+
+    .blc-welcome-image-wrap {
+        aspect-ratio: 1024 / 621;
+        height: auto;
+        min-height: 0;
+    }
+
+
+    .blc-welcome-image-wrap::after {
+        height: 28px;
+    }
+
+
+    .blc-welcome-copy {
+        padding: 18px 28px 26px;
+    }
+
+
+    .blc-welcome-title {
+        font-size: 32px !important;
+    }
+    
+    .blc-welcome-eyebrow {
+    margin: -20px 0 12px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 767px) {
+
+    .blc-welcome-state {
+        min-height: 0;
+    }
+
+
+    .blc-welcome-image-wrap {
+        aspect-ratio: 1024 / 621;
+        height: auto;
+        min-height: 0;
+    }
+
+
+    .blc-welcome-image-wrap::after {
+        height: 22px;
+    }
+
+
+    .blc-welcome-copy {
+        padding: 18px 18px 24px;
+    }
+
+
+    .blc-welcome-title {
+        font-size: 25px !important;
+    }
+
+
+    .blc-welcome-description {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+
+    /* Mobile pointer points upward because the
+       category dropdown appears above the content */
+
+    .blc-welcome-pointer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 16px;
+        text-align: center;
+    }
+
+
+    .blc-welcome-pointer-arrow {
+        width: auto;
+        height: auto;
+        flex: 0 0 auto;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+
+    .blc-welcome-pointer-divider {
+        width: 50px;
+        height: 1px;
+        min-height: 0;
+        align-self: auto;
+    }
+
+
+    .blc-welcome-pointer-copy {
+        text-align: center;
+    }
+
+
+    .blc-welcome-pointer-title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    .blc-welcome-pointer-text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+
+
+/* ==========================================
+   SELECTED CATEGORY
+   ========================================== */
+
+.blc-selection-content {
+    display: none;
+}
+
+
+.blc-selected-label {
+    margin: -10px 0 0 6px;
+    color: #52708a;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.blc-selected-category {
+    margin: 0 0 7px;
+    color: #102b46 !important;
+    font-size: 35px !important;
+    line-height: 1.25;
+    font-weight: 600 !important;
+}
+
+
+.blc-reference-text {
+    margin: 0 0 20px;
+    color: #52708a;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+
+/* Diagnosis + Medication */
+
+.blc-info-row {
+    display: flex;
+    gap: 18px;
+    align-items: stretch;
+}
+
+
+.blc-info-box {
+    width: 50%;
+    min-width: 0;
+    border: 1px solid #d9e9e5;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+
+/* Box header */
+
+.blc-info-header {
+    display: flex;
+    align-items: center;
+    min-height: 58px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    background: #edf9f7;
+}
+
+
+.blc-info-title {
+    margin: 0;
+    color: #0b7967;
+    font-size: 16px !important;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+/* Body */
+
+.blc-info-body {
+    min-height: 150px;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+
+.blc-diagnosis {
+    margin: 0;
+    color: #173b36;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Medication list */
+
+.blc-medications {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.blc-medications li {
+    position: relative;
+    margin: 0;
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid #e1ece9;
+    color: #173b36;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+
+.blc-medications li:last-child {
+    border-bottom: none;
+}
+
+
+.blc-medications li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0bafa1;
+}
+
+
+/* Content scrollbar */
+
+.blc-content-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.blc-content-scroll::-webkit-scrollbar-track {
+    background: #f1f5f3;
+}
+
+
+.blc-content-scroll::-webkit-scrollbar-thumb {
+    background: #b8d8d0;
+    border-radius: 10px;
+}
+
+
+.blc-content-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #b8d8d0 #f1f5f3;
+}
+
+
+/* ==========================================
+   GENERAL CARE CONSULTATION
+   ========================================== */
+
+.blc-consultation-instruction {
+    margin-top: 24px;
+    padding: 18px 20px;
+    background: #f4fbf9;
+    border: 1px solid #d9eee9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.blc-consultation-title {
+    margin: 0 0 8px;
+    color: #0b7967 !important;
+    font-size: 18px !important;
+    line-height: 1.4;
+    font-weight: 700 !important;
+}
+
+
+.blc-consultation-description {
+    margin: 0;
+    color: #52708a;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* ==========================================
+   ADD TO CART BUTTON
+   ========================================== */
+
+.blc-add-to-cart {
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.blc-cart-button {
+    display: inline-block;
+    background-color: #18B99F !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 12px 30px !important;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+
+/* ==========================================
+   LAB ORDER REQUEST
+   ========================================== */
+
+.blc-lab-content {
+    width: 100%;
+    margin-top: 24px;
+}
+
+
+.blc-lab-table-wrap {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #d9e9e5;
+    border-radius: 10px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+
+.blc-lab-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+.blc-lab-table th {
+    padding: 16px;
+    background: #edf9f7;
+    color: #0b7967;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+}
+
+
+.blc-lab-table td {
+    padding: 18px 20px;
+    background: #ffffff !important;
+    color: #173b36;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    vertical-align: top;
+    border: none !important;
+}
+
+
+/* Lab test list */
+
+.blc-lab-tests-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.blc-lab-tests-list li {
+    position: relative;
+    margin: 0;
+    padding: 8px 0 8px 20px;
+    color: #173b36;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+
+.blc-lab-tests-list li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0bafa1;
+}
+
+
+.blc-lab-description {
+    text-align: left;
+}
+
+
+.blc-lab-description p {
+    margin: 0 0 14px;
+}
+
+
+.blc-lab-description p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1024px) {
+
+    .blc-content-scroll {
+        padding-left: 18px;
+        padding-right: 10px;
+    }
+
+
+    .blc-page-heading {
+        font-size: 26px;
+    }
+
+
+    .blc-selected-category {
+        font-size: 21px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 767px) {
+
+    .blc-content-scroll {
+        height: 100%;
+        padding: 20px 10px;
+    }
+
+
+    .blc-page-heading {
+        font-size: 20px !important;
+    }
+
+
+    .blc-page-subtitle {
+        font-size: 13px;
+    }
+
+
+    .blc-information-card {
+        padding: 16px;
+        min-height: 0;
+    }
+
+
+    .blc-welcome-state {
+        min-height: 0;
+    }
+
+
+    .blc-welcome-image-wrap {
+        aspect-ratio: 1024 / 621;
+        height: auto;
+        min-height: 0;
+    }
+
+
+    .blc-welcome-image-wrap::after {
+        height: 22px;
+    }
+
+
+    .blc-welcome-copy {
+        padding: 4px 18px 24px;
+    }
+
+
+    .blc-welcome-title {
+        font-size: 25px !important;
+    }
+
+
+    .blc-welcome-description {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+
+    .blc-welcome-benefit {
+        padding: 0 8px;
+    }
+    
+    .blc-welcome-eyebrow {
+    margin: 5px 0 12px;
+    }
+
+
+    .blc-welcome-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .blc-welcome-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .blc-welcome-benefit-text {
+        font-size: 12px;
+    }
+
+
+    .blc-selected-category {
+        font-size: 20px !important;
+    }
+
+
+    .blc-info-row {
+        flex-direction: column;
+    }
+
+
+    .blc-info-box {
+        width: 100%;
+    }
+
+
+    .blc-lab-table {
+        min-width: 0;
+    }
+
+
+    .blc-lab-table th,
+    .blc-lab-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+}
