@@ -10,7 +10,7 @@ function blc_customization_enqueue_assets() {
     |--------------------------------------------------------------------------
     | Global CSS
     |--------------------------------------------------------------------------
-    | Keep this global only if style.css contains site-wide styles.
+    | Includes Consultation Notice and General Consultation styles.
     */
 
     wp_enqueue_style(
@@ -22,63 +22,9 @@ function blc_customization_enqueue_assets() {
 
     /*
     |--------------------------------------------------------------------------
-    | Consultation Notice Page
+    | My Account CSS
     |--------------------------------------------------------------------------
-    */
-
-    if ( is_page( 'consultation-notice' ) ) {
-
-        wp_enqueue_style(
-            'blc-consultation-notice',
-            BLC_CUSTOMIZATION_URL . 'assets/css/consultation notice/consultation-notice.css',
-            array( 'blc-customization' ),
-            BLC_CUSTOMIZATION_VERSION
-        );
-    }
-
-    /*
-    |--------------------------------------------------------------------------
-    | General Consultation Page
-    |--------------------------------------------------------------------------
-    */
-
-    if ( is_page( 'general-consultation' ) ) {
-
-        wp_enqueue_style(
-            'blc-general-consultation-content',
-            BLC_CUSTOMIZATION_URL . 'assets/css/general consultation/content.css',
-            array( 'blc-customization' ),
-            BLC_CUSTOMIZATION_VERSION
-        );
-
-        wp_enqueue_style(
-            'blc-general-consultation-sidebar',
-            BLC_CUSTOMIZATION_URL . 'assets/css/general consultation/sidebar.css',
-            array( 'blc-customization' ),
-            BLC_CUSTOMIZATION_VERSION
-        );
-
-        wp_enqueue_script(
-            'blc-customization-sidebar',
-            BLC_CUSTOMIZATION_URL . 'assets/js/sidebar.js',
-            array(),
-            BLC_CUSTOMIZATION_VERSION,
-            true
-        );
-
-        wp_enqueue_script(
-            'blc-customization-content',
-            BLC_CUSTOMIZATION_URL . 'assets/js/content.js',
-            array( 'blc-customization-sidebar' ),
-            BLC_CUSTOMIZATION_VERSION,
-            true
-        );
-    }
-
-    /*
-    |--------------------------------------------------------------------------
-    | WooCommerce My Account
-    |--------------------------------------------------------------------------
+    | Load only on the WooCommerce My Account page.
     */
 
     if ( function_exists( 'is_account_page' ) && is_account_page() ) {
@@ -90,6 +36,28 @@ function blc_customization_enqueue_assets() {
             BLC_CUSTOMIZATION_VERSION
         );
     }
+
+    /*
+    |--------------------------------------------------------------------------
+    | JavaScript
+    |--------------------------------------------------------------------------
+    */
+
+    wp_enqueue_script(
+        'blc-customization-sidebar',
+        BLC_CUSTOMIZATION_URL . 'assets/js/sidebar.js',
+        array(),
+        BLC_CUSTOMIZATION_VERSION,
+        true
+    );
+
+    wp_enqueue_script(
+        'blc-customization-content',
+        BLC_CUSTOMIZATION_URL . 'assets/js/content.js',
+        array( 'blc-customization-sidebar' ),
+        BLC_CUSTOMIZATION_VERSION,
+        true
+    );
 }
 
 add_action(
